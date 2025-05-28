@@ -8,7 +8,7 @@
   <title>Accessible Me</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://images.unsplash.com/photo-1742240216264-f0aac25ef4ba?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&family=Stick+No+Bills:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -23,7 +23,7 @@
     <div class="site-header">
       <h1 itemprop="name">Jam Box Studios</h1>
       <div class="banner">
-      <img src="https://images.unsplash.com/photo-1563330232-57114bb0823c?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Professional music recording studio with instruments, mixing board, and acoustic treatment"/>
+      <img src="https://images.unsplash.com/photo-1563330232-57114bb0823c?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Professional music recording studio with instruments, mixing board, and acoustic treatment">
       </div>
     </div>
   </header>
@@ -31,10 +31,10 @@
   <nav id="main-nav" role="navigation" aria-label="Main navigation">
     <div class="main-nav">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Reservation</a></li>
-        <li><a href="#">Studio</a></li>
+        <li><a href="#main-content">Home</a></li>
+        <li><a href="#main-content">Products</a></li>
+        <li><a href="#main-content">Reservation</a></li>
+        <li><a href="#main-content">Studio</a></li>
       </ul>
     </div>
   </nav>
@@ -46,21 +46,20 @@
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
       
       
-      
-      
       <div class="owner" role="region" aria-labelledby="owner-info">
-        <h3 id=“owner-info”>Meet the owner</h3>
+        <h3 id="owner-info">Meet the owner</h3>
         <div itemprop="employee" itemscope itemtype="https://schema.org/Person">
-        <ul aria-labelledby="owner-info-heading">
-          <li itemprop="name"><strong>Name:</strong> John Doe</li>
-          <li itemprop="jobTitle"><strong>Title:</strong> CEO</li>
-          <li itemprop="email"><strong>Email:</strong> <a href="mailto:johnjoe@jambox.ca">johnjoe@jambox.ca</a></li>
-          <li itemprop="telephone"><strong>Phone:</strong> <a href="tel:613-000-0000">613-000-0000</a></li>
-        </ul>
+          <ul>
+            <li itemprop="name"><strong>Name:</strong> John Doe</li>
+            <li itemprop="jobTitle"><strong>Title:</strong> CEO</li>
+            <li itemprop="email"><strong>Email:</strong> <a href="mailto:johnjoe@jambox.ca">johnjoe@jambox.ca</a></li>
+            <li itemprop="telephone"><strong>Phone:</strong> <a href="tel:613-000-0000">613-000-0000</a></li>
+          </ul>
         </div>
+      </div>
 
-        <h3>Address</h3>
-        <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress"></div>
+      <h3>Address</h3>
+      <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
         <span>
           Jambox Studios
           123 Guitar Road,
@@ -73,17 +72,17 @@
         <h3 id="contact-form-title">Contact Us</h3>
         <form action="thanks.html" role="form" aria-labelledby="contact-form-title">
           <label for="fullname">Full Name</label>
-          <input type="text" id="fullname" name="fullname" required aria-describedby="fullname-need">
+          <input type="text" id="fullname" name="fullname" required>
           <label for="email">Email</label>
           <input type="email" id="email" name="email" required>
           <label for="subject">Subject</label>
           <input type="text" id="subject" name="subject" required>
           <label for="message">Your Message</label>
           <textarea id="message" name="message" required></textarea>
-          <button type="submit" role="button">Send</button>
+          <button type="submit">Send</button>
         </form>
       </div>
-    </div>
+    </div> 
   </main>
 
   <footer role="contentinfo" aria-label="Site footer">
@@ -91,6 +90,7 @@
       &copy; 2021 Jam Box Studios
     </div>
   </footer>
+  </div>
 
 </body>
 </html>
